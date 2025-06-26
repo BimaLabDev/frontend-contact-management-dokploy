@@ -10,7 +10,7 @@ RUN npm install
 COPY . .
 
 # Set environment variable (harus VITE_ prefix)
-ENV VITE_API_PATH="https://209.38.95.60:3000"
+ENV VITE_API_PATH="https://209.38.95.60:3000/api"
 
 EXPOSE 5173
 
