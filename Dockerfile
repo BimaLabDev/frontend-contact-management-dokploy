@@ -10,7 +10,7 @@ RUN npm install
 COPY . .
 
 # Set environment variable (harus VITE_ prefix)
-# ENV VITE_API_PATH="https://bimadev.com/api"
+ENV VITE_API_PATH="https://bimadev.com/api"
 
 EXPOSE 5173
 
