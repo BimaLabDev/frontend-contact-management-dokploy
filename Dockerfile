@@ -6,11 +6,11 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 
-# Set environment variable (harus VITE_ prefix)
-ENV VITE_API_PATH="https://bimadev.com/api"
-
 # Salin semua source code ke container
 COPY . .
+
+# Set environment variable (harus VITE_ prefix)
+ENV VITE_API_PATH="https://bimadev.com/api"
 
 EXPOSE 5173
 
